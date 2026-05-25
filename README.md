@@ -3,10 +3,10 @@
 # 🛡️ SIEM-Integrated Network Intrusion Detection System
 ### SOC Platform — Real-Time Threat Detection + Splunk SIEM
 
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white)
-![Scapy](https://img.shields.io/badge/Scapy-Packet%20Analysis-009688?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3.x-71ADE3?style=flat-square&logo=python&logoColor=white)
+![Scapy](https://img.shields.io/badge/Scapy-Packet%20Analysis-71ADE3?style=flat-square)
 ![Splunk](https://img.shields.io/badge/Splunk-SIEM-FF5733?style=flat-square&logo=splunk&logoColor=white)
-![Platform](https://img.shields.io/badge/Platform-Kali%20Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Kali%20Linux-71ADE3?style=flat-square&logo=kalilinux&logoColor=white)
 ![Rules](https://img.shields.io/badge/Detection%20Rules-6-brightgreen?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Complete-success?style=flat-square)
 

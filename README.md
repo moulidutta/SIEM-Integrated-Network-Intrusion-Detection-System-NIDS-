@@ -10,7 +10,7 @@
 ![Rules](https://img.shields.io/badge/Detection%20Rules-6-brightgreen?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Complete-success?style=flat-square)
 
-> A production-representative SOC platform built from scratch — combining a custom Python/Scapy Network IDS with Splunk Enterprise SIEM to simulate real-world Security Operations Centre workflows. Six detection rules cover network reconnaissance, credential attacks, volumetric DoS, covert exfiltration, and MITM — all visualised on a live SOC dashboard.
+> A production-representative SOC platform built from scratch , combining a custom Python/Scapy Network IDS with Splunk Enterprise SIEM to simulate real-world Security Operations Centre workflows. Six detection rules cover network reconnaissance, credential attacks, volumetric DoS, covert exfiltration, and MITM - all visualised on a live SOC dashboard.
 
 [Overview](#-overview) • [Architecture](#-architecture) • [Detection Rules](#-detection-rules) • [Installation](#-installation) • [Usage](#-usage) • [SIEM Integration](#-siem-integration) • [Results](#-results) • [Engineering Decisions](#-engineering-decisions)
 
@@ -119,11 +119,6 @@ DNS  ──▶  DNS Tunneling / Data Exfiltration
 - All VMs on host-only network (192.168.56.0/24)
 - Splunk Enterprise 8.2.6 installed on Monitor VM
 
-### Clone the repository
-```bash
-git clone https://github.com/yourusername/siem-nids-soc-platform.git
-cd siem-nids-soc-platform
-```
 
 ### Install dependencies on Monitor VM
 ```bash
@@ -139,7 +134,7 @@ sudo ip link set eth1 promisc on
 
 ### Verify Scapy
 ```bash
-python3 -c "from scapy.all import *; print('Scapy ready ✓')"
+python3 -c "from scapy.all import *; print('Scapy ready')"
 ```
 
 ---
@@ -148,7 +143,7 @@ python3 -c "from scapy.all import *; print('Scapy ready ✓')"
 
 ### Start the IDS
 ```bash
-sudo python3 ids_advanced.py
+sudo python3 ids_monitor2.py
 ```
 
 ### Capture packets simultaneously
@@ -159,22 +154,12 @@ sudo tshark -i eth0 -i eth1 -w /tmp/ids_capture.pcap
 ### Simulate all 6 attacks from attacker VM
 ```bash
 # 1. Port scan
-nmap -sS -T4 192.168.56.102
-
 # 2. SSH brute force
-hydra -l root -P /usr/share/wordlists/rockyou.txt -t 4 ssh://192.168.56.102
-
 # 3. ARP spoofing
-sudo arpspoof -i eth1 -t 192.168.56.102 192.168.56.101
-
 # 4. ICMP flood
-sudo hping3 -1 --flood 192.168.56.102
-
 # 5. SYN flood
-sudo hping3 -S --flood -p 80 192.168.56.102
-
 # 6. DNS tunneling
-for i in {1..15}; do dig @192.168.56.103 test.local; done
+
 ```
 
 ### Open Splunk dashboard
@@ -205,17 +190,19 @@ Alert ingested into ids_alerts index
 SOC dashboard updates automatically
 ```
 
-### SOC Dashboard Panels
+### SOC Dashboard 
+<img width="900" height="898" alt="SOC NETWORK INTRUSION DETECTION LOG_2026-05-24 at 03 32 09+0530_Splunk" src="https://github.com/user-attachments/assets/b70e735d-495b-4f06-b10a-0a3a051aa6ba" />
 
-| Panel | SPL Query | Visualisation |
-|---|---|---|
-| Total Alerts | `index=ids_alerts \| stats count` | Radial gauge |
-| Critical Alerts | `index=ids_alerts severity=CRITICAL \| stats count` | Single value |
-| High Alerts | `index=ids_alerts severity=HIGH \| stats count` | Single value |
-| Alert Timeline | `index=ids_alerts \| timechart count by threat_type` | Line chart |
-| Alert Severity | `index=ids_alerts \| stats count by severity` | Pie chart |
-| Alert Log | `index=ids_alerts \| table timestamp src_ip dst_ip threat_type severity` | Table |
-| Threats Detected | `index=ids_alerts \| stats count by threat_type` | Bar chart |
+
+| Panel | Visualisation |
+|---|---|
+| Total Alerts | Radial gauge |
+| Critical Alerts | Single value |
+| High Alerts | Single value |
+| Alert Timeline | Line chart |
+| Alert Severity | Pie chart |
+| Alert Log | Table |
+| Threats Detected | Bar chart |
 
 ---
 
@@ -263,13 +250,14 @@ Several design iterations were made during development — each solving a real t
 
 ```
 siem-nids-soc-platform/
-├── ids_advanced.py              # Main IDS script — 6 detection rules
-├── ids_monitor_ml.py            # ML edition — Isolation Forest anomaly detection
-├── ids_alerts.csv               # Auto-generated alert log
-├── ids_alerts.json              # Auto-generated alert log (JSON)
-├── ids_capture.pcap             # Wireshark packet capture evidence
-├── SIEM_NIDS_Report.docx        # Formal vulnerability assessment report
-└── README.md                    # This file
+├── ids_monitor2.py                                 # Main IDS script — 6 detection rules
+├── ids_alerts.csv                                  # Auto-generated alert log
+├── ids_alerts.json                                 # Auto-generated alert log (JSON)
+├── ids_filtered.pcap                               # Wireshark packet capture evidence
+├── SIEM_NIDS_Report.pdf                            # Formal vulnerability assessment report
+├── siem_log_ids.csv                                # Alert log in SIEM dashboard
+├── SOC NETWORK INTRUSION DETECTION LOG.png         # Alert log dashboard png file
+└── README.md                                       # This file
 ```
 
 ---

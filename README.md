@@ -8,7 +8,7 @@
 ![Splunk](https://img.shields.io/badge/Splunk-SIEM-cddfeb?style=flat-square&logo=splunk&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Kali%20Linux-71ADE3?style=flat-square&logo=kalilinux&logoColor=white)
 ![Rules](https://img.shields.io/badge/Detection%20Rules-6-b1d691?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Complete-success-b1d691?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Complete-success?style=flat-square)
 
 > A production-representative SOC platform built from scratch , combining a custom Python/Scapy Network IDS with Splunk Enterprise SIEM to simulate real-world Security Operations Centre workflows. Six detection rules cover network reconnaissance, credential attacks, volumetric DoS, covert exfiltration, and MITM - all visualised on a live SOC dashboard.
 

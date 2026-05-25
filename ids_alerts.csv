@@ -1,0 +1,22 @@
+timestamp,src_ip,dst_ip,threat_type,severity,detail
+2026-05-24 02:42:22,192.168.56.101,192.168.56.102,PORT SCAN DETECTED,HIGH,50 SYN packets in 5s — 36 unique destination ports targeted.
+2026-05-24 02:43:19,192.168.56.101,192.168.56.102,BRUTE FORCE DETECTED — SSH,CRITICAL,10 connection attempts to SSH (port 22) in 60s.
+2026-05-24 02:43:31,192.168.56.101,192.168.56.102,BRUTE FORCE DETECTED — SSH,CRITICAL,10 connection attempts to SSH (port 22) in 60s.
+2026-05-24 02:45:34,08:00:27:c5:06:86,192.168.56.103,ARP SPOOFING DETECTED,HIGH,"IP 192.168.56.103 previously mapped to MAC 08:00:27:44:dd:84, now claiming MAC 08:00:27:c5:06:86. Possible MITM attack."
+2026-05-24 02:45:53,192.168.56.101,192.168.56.103,DNS TUNNELING DETECTED — HIGH QUERY VOLUME,HIGH,10 DNS queries in 30s from same IP. 1 unique domains queried.Possible data exfiltration via DNS.
+2026-05-24 02:45:53,192.168.56.103,192.168.56.101,DNS TUNNELING DETECTED — HIGH QUERY VOLUME,HIGH,10 DNS queries in 30s from same IP. 1 unique domains queried.Possible data exfiltration via DNS.
+2026-05-24 02:46:44,192.168.56.101,192.168.56.102,ICMP FLOOD DETECTED,HIGH,100 ICMP packets in 5s from same IP. Possible DoS/DDoS attack via ICMP flood.
+2026-05-24 02:47:13,192.168.56.101,192.168.56.102,SYN FLOOD / DoS DETECTED,HIGH,500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack.
+2026-05-24 02:47:45,192.168.56.101,192.168.56.102,SYN FLOOD / DoS DETECTED,HIGH,500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack.
+2026-05-24 02:47:45,192.168.56.101,192.168.56.102,SYN FLOOD / DoS DETECTED,HIGH,500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack.
+2026-05-24 02:47:46,192.168.56.101,192.168.56.102,SYN FLOOD / DoS DETECTED,HIGH,500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack.
+2026-05-24 02:47:46,192.168.56.101,192.168.56.102,SYN FLOOD / DoS DETECTED,HIGH,500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack.
+2026-05-24 02:47:46,192.168.56.101,192.168.56.102,SYN FLOOD / DoS DETECTED,HIGH,500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack.
+2026-05-24 02:47:46,192.168.56.101,192.168.56.102,SYN FLOOD / DoS DETECTED,HIGH,500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack.
+2026-05-24 02:47:46,192.168.56.101,192.168.56.102,SYN FLOOD / DoS DETECTED,HIGH,500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack.
+2026-05-24 02:47:46,192.168.56.101,192.168.56.102,SYN FLOOD / DoS DETECTED,HIGH,500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack.
+2026-05-24 02:47:46,192.168.56.101,192.168.56.102,SYN FLOOD / DoS DETECTED,HIGH,500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack.
+2026-05-24 02:47:46,192.168.56.101,192.168.56.102,SYN FLOOD / DoS DETECTED,HIGH,500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack.
+2026-05-24 02:47:46,192.168.56.101,192.168.56.102,SYN FLOOD / DoS DETECTED,HIGH,500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack.
+2026-05-24 02:47:46,192.168.56.101,192.168.56.102,SYN FLOOD / DoS DETECTED,HIGH,500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack.
+2026-05-24 02:47:46,192.168.56.101,192.168.56.102,SYN FLOOD / DoS DETECTED,HIGH,500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack.

@@ -1,0 +1,170 @@
+[
+  {
+    "timestamp": "2026-05-24 02:42:22",
+    "src_ip": "192.168.56.101",
+    "dst_ip": "192.168.56.102",
+    "threat_type": "PORT SCAN DETECTED",
+    "severity": "HIGH",
+    "detail": "50 SYN packets in 5s \u2014 36 unique destination ports targeted."
+  },
+  {
+    "timestamp": "2026-05-24 02:43:19",
+    "src_ip": "192.168.56.101",
+    "dst_ip": "192.168.56.102",
+    "threat_type": "BRUTE FORCE DETECTED \u2014 SSH",
+    "severity": "CRITICAL",
+    "detail": "10 connection attempts to SSH (port 22) in 60s."
+  },
+  {
+    "timestamp": "2026-05-24 02:43:31",
+    "src_ip": "192.168.56.101",
+    "dst_ip": "192.168.56.102",
+    "threat_type": "BRUTE FORCE DETECTED \u2014 SSH",
+    "severity": "CRITICAL",
+    "detail": "10 connection attempts to SSH (port 22) in 60s."
+  },
+  {
+    "timestamp": "2026-05-24 02:45:34",
+    "src_ip": "08:00:27:c5:06:86",
+    "dst_ip": "192.168.56.103",
+    "threat_type": "ARP SPOOFING DETECTED",
+    "severity": "HIGH",
+    "detail": "IP 192.168.56.103 previously mapped to MAC 08:00:27:44:dd:84, now claiming MAC 08:00:27:c5:06:86. Possible MITM attack."
+  },
+  {
+    "timestamp": "2026-05-24 02:45:53",
+    "src_ip": "192.168.56.101",
+    "dst_ip": "192.168.56.103",
+    "threat_type": "DNS TUNNELING DETECTED \u2014 HIGH QUERY VOLUME",
+    "severity": "HIGH",
+    "detail": "10 DNS queries in 30s from same IP. 1 unique domains queried.Possible data exfiltration via DNS."
+  },
+  {
+    "timestamp": "2026-05-24 02:45:53",
+    "src_ip": "192.168.56.103",
+    "dst_ip": "192.168.56.101",
+    "threat_type": "DNS TUNNELING DETECTED \u2014 HIGH QUERY VOLUME",
+    "severity": "HIGH",
+    "detail": "10 DNS queries in 30s from same IP. 1 unique domains queried.Possible data exfiltration via DNS."
+  },
+  {
+    "timestamp": "2026-05-24 02:46:44",
+    "src_ip": "192.168.56.101",
+    "dst_ip": "192.168.56.102",
+    "threat_type": "ICMP FLOOD DETECTED",
+    "severity": "HIGH",
+    "detail": "100 ICMP packets in 5s from same IP. Possible DoS/DDoS attack via ICMP flood."
+  },
+  {
+    "timestamp": "2026-05-24 02:47:13",
+    "src_ip": "192.168.56.101",
+    "dst_ip": "192.168.56.102",
+    "threat_type": "SYN FLOOD / DoS DETECTED",
+    "severity": "HIGH",
+    "detail": "500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack."
+  },
+  {
+    "timestamp": "2026-05-24 02:47:45",
+    "src_ip": "192.168.56.101",
+    "dst_ip": "192.168.56.102",
+    "threat_type": "SYN FLOOD / DoS DETECTED",
+    "severity": "HIGH",
+    "detail": "500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack."
+  },
+  {
+    "timestamp": "2026-05-24 02:47:45",
+    "src_ip": "192.168.56.101",
+    "dst_ip": "192.168.56.102",
+    "threat_type": "SYN FLOOD / DoS DETECTED",
+    "severity": "HIGH",
+    "detail": "500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack."
+  },
+  {
+    "timestamp": "2026-05-24 02:47:46",
+    "src_ip": "192.168.56.101",
+    "dst_ip": "192.168.56.102",
+    "threat_type": "SYN FLOOD / DoS DETECTED",
+    "severity": "HIGH",
+    "detail": "500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack."
+  },
+  {
+    "timestamp": "2026-05-24 02:47:46",
+    "src_ip": "192.168.56.101",
+    "dst_ip": "192.168.56.102",
+    "threat_type": "SYN FLOOD / DoS DETECTED",
+    "severity": "HIGH",
+    "detail": "500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack."
+  },
+  {
+    "timestamp": "2026-05-24 02:47:46",
+    "src_ip": "192.168.56.101",
+    "dst_ip": "192.168.56.102",
+    "threat_type": "SYN FLOOD / DoS DETECTED",
+    "severity": "HIGH",
+    "detail": "500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack."
+  },
+  {
+    "timestamp": "2026-05-24 02:47:46",
+    "src_ip": "192.168.56.101",
+    "dst_ip": "192.168.56.102",
+    "threat_type": "SYN FLOOD / DoS DETECTED",
+    "severity": "HIGH",
+    "detail": "500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack."
+  },
+  {
+    "timestamp": "2026-05-24 02:47:46",
+    "src_ip": "192.168.56.101",
+    "dst_ip": "192.168.56.102",
+    "threat_type": "SYN FLOOD / DoS DETECTED",
+    "severity": "HIGH",
+    "detail": "500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack."
+  },
+  {
+    "timestamp": "2026-05-24 02:47:46",
+    "src_ip": "192.168.56.101",
+    "dst_ip": "192.168.56.102",
+    "threat_type": "SYN FLOOD / DoS DETECTED",
+    "severity": "HIGH",
+    "detail": "500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack."
+  },
+  {
+    "timestamp": "2026-05-24 02:47:46",
+    "src_ip": "192.168.56.101",
+    "dst_ip": "192.168.56.102",
+    "threat_type": "SYN FLOOD / DoS DETECTED",
+    "severity": "HIGH",
+    "detail": "500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack."
+  },
+  {
+    "timestamp": "2026-05-24 02:47:46",
+    "src_ip": "192.168.56.101",
+    "dst_ip": "192.168.56.102",
+    "threat_type": "SYN FLOOD / DoS DETECTED",
+    "severity": "HIGH",
+    "detail": "500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack."
+  },
+  {
+    "timestamp": "2026-05-24 02:47:46",
+    "src_ip": "192.168.56.101",
+    "dst_ip": "192.168.56.102",
+    "threat_type": "SYN FLOOD / DoS DETECTED",
+    "severity": "HIGH",
+    "detail": "500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack."
+  },
+  {
+    "timestamp": "2026-05-24 02:47:46",
+    "src_ip": "192.168.56.101",
+    "dst_ip": "192.168.56.102",
+    "threat_type": "SYN FLOOD / DoS DETECTED",
+    "severity": "HIGH",
+    "detail": "500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack."
+  },
+  {
+    "timestamp": "2026-05-24 02:47:46",
+    "src_ip": "192.168.56.101",
+    "dst_ip": "192.168.56.102",
+    "threat_type": "SYN FLOOD / DoS DETECTED",
+    "severity": "HIGH",
+    "detail": "500 SYN packets to port 80 in 3s from same source IP. Possible SYN flood DoS attack."
+  }
+]

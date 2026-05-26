@@ -20,7 +20,7 @@
 
 ## 🎯 Overview
 
-Most IDS projects stop at detection. This one goes further — every alert is automatically forwarded to **Splunk Enterprise** for real-time log ingestion, correlation, and SOC dashboard visualisation. The result is a complete attack-to-dashboard pipeline that mirrors enterprise security operations.
+Most IDS projects stop at detection. This one goes further , every alert is automatically forwarded to **Splunk Enterprise** for real-time log ingestion, correlation, and SOC dashboard visualisation. The result is a complete attack-to-dashboard pipeline that mirrors enterprise security operations.
 
 ### What makes this different
 
@@ -299,6 +299,6 @@ siem-nids-soc-platform/
 
 <div align="center">
 
-⭐ If this project helped you — give it a star!
+⭐ If this project helped you give it a star!
 
 </div>
